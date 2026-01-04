@@ -1,0 +1,35 @@
+html {
+    /* Kill all color */
+    filter: grayscale(100%) contrast(110%);
+}
+
+:root {
+    --background-primary: #000000 !important;
+    --background-secondary: #000000 !important;
+    --background-tertiary: #000000 !important;
+    --background-secondary-alt: #000000 !important;
+    --channeltextarea-background: #000000 !important;
+    --background-floating: #000000 !important;
+
+    --border-faint: transparent !important; 
+}
+
+.typeWindows_a934d8 {
+    background: #000000 !important;
+}
+
+.sidebar_a4d4d9, .members_cbd271 {
+    background: #000000 !important;
+}
+
+@import url('https://fonts.cdnfonts.com/css/pixelmplus12');
+
+:root {
+    --font-primary: "PixelMplus12", "gg sans", "Noto Sans", sans-serif;
+    --font-display: "PixelMplus12", "gg sans", "Noto Sans", sans-serif;
+    --font-headline: "PixelMplus12", "gg sans", "Noto Sans", sans-serif;
+    --font-code: "PixelMplus12", monospace;
+}
+html, body, span, div {
+    font-family: "Terminess Nerd Font Mono", "PixelMplus12", "Yuji Syuku", "gg sans" !important;
+}
