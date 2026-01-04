@@ -1,0 +1,51 @@
+#![enable(implicit_some)]
+(
+    address: "127.0.0.1:6600",
+    theme: "monokuromu",
+
+    album_art: (
+        method: Kitty,
+        max_size_px: (width: 600, height: 600),
+    ),
+
+    queue: (
+        columns: [
+            (
+                title: "アーティスト", 
+                width: "20%",
+                kind: Property(Artist),
+                style: (fg: "gray"),
+            ),
+            (
+                title: "タイトル", 
+                width: "40%",
+                kind: Property(Title),
+                default: (kind: Property(Filename)),
+                style: (fg: "white", modifiers: "Bold"),
+            ),
+            (
+                title: "アルバム", 
+                width: "30%",
+                kind: Property(Album),
+                style: (fg: "gray"),
+            ),
+            (
+                title: "時間", 
+                width: "10%",
+                kind: Property(Duration),
+                style: (fg: "white"),
+                align: Right,
+            ),
+        ]
+    ),
+
+    tabs: (
+        [
+            (name: "プレイリスト", pane: Pane(Queue)),
+            (name: "ディレクトリ", pane: Pane(Directories)),
+            (name: "アーティスト", pane: Pane(Artists)),
+            (name: "アルバム", pane: Pane(Albums)),
+            (name: "検索", pane: Pane(Search)),
+        ]
+    ),
+)

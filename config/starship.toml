@@ -1,0 +1,26 @@
+# ~/.config/starship.toml
+
+format = """
+$directory\
+$character"""
+
+command_timeout = 500
+
+[directory]
+format = "($style)[$path]($style) " # "Current Location: Path"
+truncation_length = 3
+truncation_symbol = "…/"
+style = "white bold"  
+read_only = " x"
+
+[directory.substitutions]
+"~" = "～" 
+
+[character]
+success_symbol = "[「](white bold)"
+error_symbol = "[『](white bold)"
+
+[git_branch]
+format = "[$symbol$branch]($style) "
+style = "white"
+symbol = "分岐 " 

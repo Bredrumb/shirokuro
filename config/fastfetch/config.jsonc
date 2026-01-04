@@ -1,0 +1,62 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "source": "arch_small",
+    "padding": {
+      "top": 0,
+      "right": 4
+    },
+    "color": {
+      "1": "white",
+      "2": "white"
+    }
+  },
+  "display": {
+    "separator": "  ",
+    "color": "white",
+    "key": {
+        "width": 12
+    }
+  },
+  "modules": [
+    {
+      "type": "os",
+      "key": "システム",
+      "keyColor": "white",
+      "format": "{3}"
+    },
+    {
+      "type": "kernel",
+      "key": "カーネル",
+      "keyColor": "white"
+    },
+    {
+      "type": "de",        
+      "key": "環境    ",   
+      "keyColor": "white"
+    },
+    {
+      "type": "terminal",
+      "key": "端末    ", 
+      "keyColor": "white"
+    },
+    {
+      "type": "cpu",
+      "key": "ＣＰＵ  ",
+      "keyColor": "white"
+    },
+    {
+      "type": "gpu",
+      "key": "ＧＰＵ  ",
+      "keyColor": "white"
+    },
+    {
+      "type": "memory",
+      "key": "メモリ  ",
+      "keyColor": "white"
+    },
+    {
+      "type": "break"
+    }
+  ]
+}
